@@ -2,4 +2,12 @@
 
 set -o pipefail
 
-xcodebuild test -workspace Tropos.xcworkspace -scheme Tropos -sdk iphonesimulator BUILD_ACTIVE_ARCH=NO | xcpretty -t -c
+xctool -reporter pretty \
+  CODE_SIGNING_REQUIRED=NO \
+  CODE_SIGN_IDENTITY= \
+  PROVISIONING_PROFILE= \
+  -scheme Tropos \
+  -workspace Tropos.xcworkspace \
+  -sdk iphonesimulator \
+  build build-tests run-tests
+
