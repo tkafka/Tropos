@@ -6,3 +6,7 @@ dependencies:
   override:
     - brew update
     - bin/setup
+  cache_directories:
+    - "Pods"
+    - "~/Library/Caches/org.carthage.CarthageKit/"
+

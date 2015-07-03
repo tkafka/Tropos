@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 
-bundle install
+if [ "$CI" == "true" ]; then
+  bundle check --path=vendor/bundle || bundle install --path=vendor/bundle --jobs=4 --retry=3 
+else
+  bundle install
+fi
 pod install
 brew install carthage 2> /dev/null
 carthage bootstrap
