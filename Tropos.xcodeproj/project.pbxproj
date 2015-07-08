@@ -271,6 +271,13 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		234BD0111B46419F00D5AEC5 /* Formatters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Formatters;
+			sourceTree = "<group>";
+		};
 		301CF0A99B4C5FAECDB23D75 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -494,6 +501,7 @@
 			isa = PBXGroup;
 			children = (
 				6D0F13661B433521001685BA /* Models */,
+				234BD0111B46419F00D5AEC5 /* Formatters */,
 				4D9CA35C1A5C7672009E24DD /* TRBearingFormatterSpec.m */,
 				4DA79AC01A68806600C3539D /* UIColor_TRTemperatureColorsSpec.m */,
 				E7E8D6021ACF0B9700BD8364 /* TRWeatherUpdateSpec.m */,
