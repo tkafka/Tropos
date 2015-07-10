@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="DINNextLTPro-Light.otf">
+            <string>DINNextLTPro-Light</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="qhP-Vk-pcO" customClass="ErrorView" customModule="Tropos" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NZM-hB-5hP">
+                    <rect key="frame" x="40" y="151" width="520" height="236"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lightning" translatesAutoresizingMaskIntoConstraints="NO" id="mkx-YQ-0RW">
+                            <rect key="frame" x="222" y="0.0" width="77" height="74"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="77" id="2TY-GY-4V6"/>
+                                <constraint firstAttribute="height" constant="74" id="TGd-Sy-5CU"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Could not get the latest weather conditions." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SUt-wr-JGw">
+                            <rect key="frame" x="0.0" y="129" width="520" height="22"/>
+                            <fontDescription key="fontDescription" name="DINNextLTPro-Light" family="DIN Next LT Pro" pointSize="22"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W9X-dL-VLr" customClass="RefreshButton" customModule="Tropos" customModuleProvider="target">
+                            <rect key="frame" x="230" y="176" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="uRC-ew-EFe"/>
+                                <constraint firstAttribute="width" constant="60" id="uyf-ul-sPW"/>
+                            </constraints>
+                            <state key="normal" image="refresh-button">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="refresh:" destination="qhP-Vk-pcO" eventType="touchUpInside" id="HsN-AD-Q1a"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="W9X-dL-VLr" firstAttribute="top" secondItem="SUt-wr-JGw" secondAttribute="bottom" constant="25" id="E2Y-bh-VHu"/>
+                        <constraint firstItem="mkx-YQ-0RW" firstAttribute="top" secondItem="NZM-hB-5hP" secondAttribute="top" id="agT-c1-LPy"/>
+                        <constraint firstItem="SUt-wr-JGw" firstAttribute="leading" secondItem="NZM-hB-5hP" secondAttribute="leading" id="kuQ-2C-t8X"/>
+                        <constraint firstAttribute="trailing" secondItem="SUt-wr-JGw" secondAttribute="trailing" id="n9Z-eE-RSI"/>
+                        <constraint firstItem="SUt-wr-JGw" firstAttribute="top" secondItem="mkx-YQ-0RW" secondAttribute="bottom" constant="55" id="r95-Yo-gGO"/>
+                        <constraint firstAttribute="bottom" secondItem="W9X-dL-VLr" secondAttribute="bottom" id="vbL-Ub-Qi9"/>
+                        <constraint firstAttribute="centerX" secondItem="W9X-dL-VLr" secondAttribute="centerX" id="wKd-mL-Tj6"/>
+                        <constraint firstAttribute="centerX" secondItem="mkx-YQ-0RW" secondAttribute="centerX" constant="-0.5" id="x0i-PE-mvt"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.098039215686274508" green="0.098039215686274508" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="NZM-hB-5hP" secondAttribute="centerY" constant="31.5" id="QXm-Lx-pLY"/>
+                <constraint firstItem="NZM-hB-5hP" firstAttribute="leading" secondItem="qhP-Vk-pcO" secondAttribute="leading" constant="40" id="jYZ-vB-RfC"/>
+                <constraint firstAttribute="trailing" secondItem="NZM-hB-5hP" secondAttribute="trailing" constant="40" id="q7d-T5-fx5"/>
+                <constraint firstAttribute="centerX" secondItem="NZM-hB-5hP" secondAttribute="centerX" id="s2N-ZS-jp3"/>
+            </constraints>
+            <point key="canvasLocation" x="895" y="497"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="lightning" width="154" height="148"/>
+        <image name="refresh-button" width="122" height="122"/>
+    </resources>
+</document>

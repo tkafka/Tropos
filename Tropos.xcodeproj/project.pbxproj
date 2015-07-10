@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		130C4C29D1C62D52D0767A6B /* Main.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = E59B090E67C8BD269D3CD9DB /* Main.storyboard */; };
+		39CC8A5C1B503C8D00D596E6 /* ErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39CC8A5B1B503C8D00D596E6 /* ErrorView.xib */; };
+		39CC8A5E1B503C9A00D596E6 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CC8A5D1B503C9A00D596E6 /* ErrorView.swift */; };
+		39CC8A601B5041C800D596E6 /* RefreshButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CC8A5F1B5041C800D596E6 /* RefreshButton.swift */; };
 		46660A27B04F4C7B78A7920F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436D9431497525313B32E225 /* Foundation.framework */; };
 		4D0A5C381A3A27510084C41E /* TRForecastController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0A5C371A3A27510084C41E /* TRForecastController.m */; };
 		4D0A5C3D1A3A53DD0084C41E /* CWForecastDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D0A5C3C1A3A53DD0084C41E /* CWForecastDetailView.xib */; };
@@ -98,6 +101,9 @@
 		2853082980109C89B8F07D3C /* main.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2CA708068A67D7E761D29251 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		3431B0CE6A3E1D06EBAB27BF /* Pods-unit_tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unit_tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-unit_tests/Pods-unit_tests.debug.xcconfig"; sourceTree = "<group>"; };
+		39CC8A5B1B503C8D00D596E6 /* ErrorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ErrorView.xib; sourceTree = "<group>"; };
+		39CC8A5D1B503C9A00D596E6 /* ErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		39CC8A5F1B5041C800D596E6 /* RefreshButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshButton.swift; sourceTree = "<group>"; };
 		436D9431497525313B32E225 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		4D0A5C361A3A27510084C41E /* TRForecastController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRForecastController.h; sourceTree = "<group>"; };
 		4D0A5C371A3A27510084C41E /* TRForecastController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRForecastController.m; sourceTree = "<group>"; };
@@ -289,6 +295,7 @@
 				B6D58F8AA6976EA1B35682B7 /* LaunchScreen.xib */,
 				4D0A5C3C1A3A53DD0084C41E /* CWForecastDetailView.xib */,
 				4D3336F51A80BE16001BA9A8 /* TRDailyForecastView.xib */,
+				39CC8A5B1B503C8D00D596E6 /* ErrorView.xib */,
 			);
 			path = Nibs;
 			sourceTree = "<group>";
@@ -368,6 +375,8 @@
 				4D49554B1A8C298A0066F278 /* TRRefreshView.m */,
 				4DC069CB1A95B8F800F3BCEB /* TRColorBackdropLayer.h */,
 				4DC069CC1A95B8F800F3BCEB /* TRColorBackdropLayer.m */,
+				39CC8A5D1B503C9A00D596E6 /* ErrorView.swift */,
+				39CC8A5F1B5041C800D596E6 /* RefreshButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -672,6 +681,7 @@
 				C2E44CE91A3A42C6009CC844 /* InfoPlist.strings in Resources */,
 				4D3336F61A80BE16001BA9A8 /* TRDailyForecastView.xib in Resources */,
 				C2E44CE41A3A4273009CC844 /* Localizable.strings in Resources */,
+				39CC8A5C1B503C8D00D596E6 /* ErrorView.xib in Resources */,
 				5DA50AD91A82CAB300CAE666 /* DINNextLTPro-Light.otf in Resources */,
 				4D9CA35F1A5CABDD009E24DD /* Settings.bundle in Resources */,
 			);
@@ -822,6 +832,7 @@
 				130C4C29D1C62D52D0767A6B /* Main.storyboard in Sources */,
 				4DEDF4F61A6FA682006F3F11 /* TRWeatherUpdate.m in Sources */,
 				4DF5BA391A5B64630088F35F /* TRBearingFormatter.m in Sources */,
+				39CC8A601B5041C800D596E6 /* RefreshButton.swift in Sources */,
 				4D49377E1A82F82A007A1FA9 /* TRImageView.m in Sources */,
 				4D7CDEC21A4705400038DD33 /* UIColor+TRTemperatureColors.m in Sources */,
 				4DD90B9A1AAE5D880069ECA7 /* TRWindSpeedFormatter.m in Sources */,
@@ -835,6 +846,7 @@
 				4D7CDECC1A47E13F0038DD33 /* TRTemperatureComparisonFormatter.m in Sources */,
 				4D7CDEC51A47DCD60038DD33 /* NSMutableAttributedString+TRAttributeHelpers.m in Sources */,
 				C2E44CE11A3A3C09009CC844 /* TRWeatherViewController.m in Sources */,
+				39CC8A5E1B503C9A00D596E6 /* ErrorView.swift in Sources */,
 				4D1ABA0B1A89686200B7F8FB /* TRNavigationBar.m in Sources */,
 				CE5D7F3B45F980082E1BCA30 /* LaunchScreen.xib in Sources */,
 				C9318C8461EB5FE3914F9AC0 /* main.m in Sources */,

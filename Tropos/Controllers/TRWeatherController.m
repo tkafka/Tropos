@@ -56,6 +56,7 @@
 
     RAC(self, weatherUpdateError) = [self.updateWeatherCommand.errors doNext:^(NSError *error) {
         [[TRAnalyticsController sharedController] trackError:error eventName:@"Error: Weather Update"];
+
     }];
 
     [[self latestWeatherUpdates] subscribeNext:^(TRWeatherUpdate *update) {

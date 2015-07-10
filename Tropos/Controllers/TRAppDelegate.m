@@ -3,6 +3,7 @@
 #import "TRAnalyticsController.h"
 #import "TRSettingsController.h"
 #import "TRApplicationController.h"
+#import "Tropos-Swift.h"
 
 #ifndef DEBUG
 #import "Secrets.h"
@@ -29,6 +30,11 @@
 
     self.window.rootViewController = self.applicationController.rootViewController;
     [self.window makeKeyAndVisible];
+
+    ErrorView *errorView = [[[UINib nibWithNibName:@"ErrorView" bundle:nil] instantiateWithOwner:self options:nil] firstObject];
+    errorView.frame = [[UIScreen mainScreen] bounds];
+    [self.window addSubview:errorView];
+
 
     return YES;
 }
